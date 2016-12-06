@@ -76,7 +76,12 @@ public class Dealer extends Player{
 		int total = 0;
 		for(Card c : player.getHand()){
 			if(c.getType().equals("A")){
-				total+=1;
+				if(total+11<22){
+					total+=11;
+				}
+				else{
+					total+=1;
+				}
 			}
 			else{
 				total+=c.getVal();
