@@ -16,6 +16,7 @@ public class Dealer extends Player{
 		for(Player p : players){
 			p.flush();
 			p.addCard(Deck.pull());
+			p.addCard(Deck.pull());
 		}
 		
 		while(true){
